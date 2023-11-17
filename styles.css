@@ -5,13 +5,19 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
 .banner-img {
   width: 100% ;
   height: auto;
 }
-.text-align-center {
-  text-align: center;
-}
+
 .header-text {
   font-size: 4em;
   color: green;
@@ -22,11 +28,11 @@
   font-weight: 500;
 }
 
-.justify-content-center {
-  justify-content: center;
+.icon-container {
+  padding: 4em;
 }
 
-.icon {
+.icon-image {
   width: 150px;
   }
 .icon-sub-text {
@@ -45,4 +51,64 @@
 
 .hero {
   padding: 2em 0em 4em 0em;
+}
+@media screen and (max-width: 500px){
+  .hero {
+    padding: 1.5em 0em 3em 0em;
+  }
+  .header-text {
+    font-size: 2em;
+  }
+  .sub-header-text {
+    font-size: 1.5em;
+  }
+  .icon-image {
+    width: 100px
+  }
+  .icon-container {
+    padding: 1.5em 0em 2em 0em;
+  }
+    .icon-sub-text {
+      padding-top: 1em;
+      font-size: 1.5em;
+    }
+        .button-inquire {
+          background-color: green;
+          color: white;
+          border: none;
+          font-size: 1.5em;
+          padding: .5em 1.5em .5em 1.5em;
+          font-weight: 700;
+        }
+}
+
+
+@media screen and (max-width: 500px){
+  .hero {
+    padding: 1.5em 0em 3em 0em;
+  }
+  .header-text {
+    font-size: 2em;
+  }
+  .sub-header-text {
+    font-size: 1.5em;
+  }
+  .icon-image {
+    width: 100px
+  }
+  .icon-container {
+    padding: 1.5em 0em 2em 0em;
+  }
+    .icon-sub-text {
+      padding-top: 1em;
+      font-size: 1.5em;
+    }
+        .button-inquire {
+          background-color: green;
+          color: white;
+          border: none;
+          font-size: 1.5em;
+          padding: .5em 1.5em .5em 1.5em;
+          font-weight: 700;
+        }
 }
