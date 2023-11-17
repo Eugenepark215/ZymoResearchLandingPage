@@ -76,7 +76,7 @@
   width: 75%;
 }
 
-p{
+p {
   font-size: 1.5em;
   font-weight: 500;
   padding: 1em 0em 1em 0em;
@@ -136,6 +136,28 @@ p{
     font-size: 2em;
     padding: .5em 1.5em .5em 1.5em;
   }
+
+  .text {
+    padding: 1.5em 0em 3em 0em;
+  }
+
+  .header-text {
+    font-size: 2.5em;
+    padding: 0em 0 .25em 0;
+  }
+
+  .sub-header-text {
+    font-size: 1.5em;
+    padding: 0em 0 .25em 0;
+  }
+
+  .text-container {
+    width: 85%;
+  }
+
+  p {
+    font-size: 1.25em;
+    }
 }
 
 @media screen and (max-width: 500px){
