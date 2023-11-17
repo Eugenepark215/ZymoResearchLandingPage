@@ -6,3 +6,21 @@
 .banner-img {
   width: 100% ;
 }
+.text-align-center {
+  text-align: center;
+}
+.header-text {
+  font-size: 4em;
+  color: green;
+}
+.sub-header-text {
+  font-size: 2em;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.icon {
+  width: 150px;
+}
