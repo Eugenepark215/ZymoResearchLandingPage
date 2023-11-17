@@ -18,12 +18,12 @@
   height: auto;
 }
 
-.header-text {
+.header-hero {
   font-size: 4em;
   color: green;
   font-weight: 700;
 }
-.sub-header-text {
+.sub-header-hero {
   font-size: 2em;
   font-weight: 500;
 }
@@ -52,11 +52,40 @@
 .hero {
   padding: 2em 0em 4em 0em;
 }
+
+.text {
+  background-color: rgb(240, 240, 240);
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0em 4em 0em;
+}
+
+.header-text {
+  font-size: 3em;
+  font-weight: 500;
+  padding: 0em 0 1em 0;
+}
+
+.sub-header-text {
+  font-size: 2em;
+  font-weight: 500;
+  padding: 0em 0 1em 0;
+}
+
+.text-container {
+  width: 75%;
+}
+
+p{
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 1em 0em 1em 0em;
+}
 @media screen and (max-width: 500px){
-  .header-text {
+  .header-hero {
     font-size: 2em;
   }
-  .sub-header-text {
+  .sub-header-hero {
     font-size: 1.5em;
   }
   .icon-image {
@@ -79,11 +108,11 @@
     padding: 1.5em 0em 3em 0em;
   }
 
-  .header-text {
+  .header-hero {
     font-size: 3em;
   }
 
-  .sub-header-text {
+  .sub-header-hero {
     font-size: 2em;
   }
 
