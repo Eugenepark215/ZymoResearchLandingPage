@@ -148,7 +148,7 @@ p {
 
   .sub-header-text {
     font-size: 1.5em;
-    padding: 0em 0 .25em 0;
+    padding: 0em 0em .25em 0em;
   }
 
   .text-container {
@@ -157,7 +157,10 @@ p {
 
   p {
     font-size: 1.25em;
+
     }
+
+
 }
 
 @media screen and (max-width: 500px){
@@ -176,16 +179,26 @@ p {
   .icon-container {
     padding: 1.5em 0em 2em 0em;
   }
-    .icon-sub-text {
-      padding-top: 1em;
-      font-size: 1.5em;
-    }
-        .button-inquire {
-          background-color: green;
-          color: white;
-          border: none;
-          font-size: 1.5em;
-          padding: .5em 1.5em .5em 1.5em;
-          font-weight: 700;
-        }
+  .icon-sub-text {
+    padding-top: 1em;
+    font-size: 1.5em;
+  }
+  .button-inquire {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    padding: .5em 1.5em .5em 1.5em;
+    font-weight: 700;
+  }
+  .text-container {
+    height: 15em;
+    overflow-y: auto;
+  }
+  p {
+    padding: 0;
+  }
+  .sub-header-text {
+    padding: 0em 0em 1em 0em;
+  }
 }
