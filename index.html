@@ -8,7 +8,14 @@
   <link rel="stylesheet" href="/styles.css"/>
 </head>
 <body>
-  <header class="banner"></header>
+  <header class="banner">
+    <picture>
+      <source media="(min-width:1200px)" srcset="./images/banner-desktop.jpg"/>
+      <source media="(min-width:800px)" srcset="./images/banner-tablet.jpg"/>
+      <img class="banner-img" src="./images/banner-mobile.jpg"/>
+    </picture>
+
+  </header>
   <section class="hero"></section>
   <section class="text"></section>
   <section class="form-container"></section>
