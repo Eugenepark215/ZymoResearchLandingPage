@@ -133,12 +133,18 @@ input {
   border-style: solid;
 }
 
+
 textarea {
+  height: 10em;
   border-radius: 10px;
   border-color: lightgray;
   border-style: solid;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: transparent;
+}
 
 @media screen and (max-width: 800px) {
   .hero {
@@ -247,4 +253,34 @@ textarea {
   .sub-header-text {
     padding: 0em 0em 1em 0em;
   }
+
+  .form-row {
+    flex-direction: column;
+    padding: 0em;
+  }
+
+  label {
+    display: none;
+  }
+
+  input, textarea {
+    text-indent: 10px;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: gray;
+    padding-top: 10px;
+  }
+
+  .input-container, .textarea-container {
+    width: 100%;
+    padding: .5em 0em .5em 0em;
+  }
+
+  .button-submit {
+      font-size: 1.5em;
+      padding: .5em 1.5em .5em 1.5em;
+      font-weight: 700;
+      width: 100%;
+    }
 }
