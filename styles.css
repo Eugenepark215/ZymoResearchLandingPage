@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
 }
 
 .text-align-center {
@@ -50,9 +51,12 @@
   background-color: green;
   color: white;
   border: none;
+  border-radius: 10px;
   font-size:2em;
   padding: .5em 1.5em .5em 1.5em;
   font-weight: 700;
+  text-decoration: none;
+  transition-duration: 0.4s
 }
 
 .hero {
@@ -131,6 +135,7 @@ input {
   border-radius: 10px;
   border-color: lightgray;
   border-style: solid;
+  text-indent: 10px;
 }
 
 
@@ -139,6 +144,8 @@ textarea {
   border-radius: 10px;
   border-color: lightgray;
   border-style: solid;
+  text-indent: 10px;
+  padding-top: 10px;
 }
 
 input::placeholder,
@@ -263,13 +270,8 @@ textarea::placeholder {
     display: none;
   }
 
-  input, textarea {
-    text-indent: 10px;
-  }
-
   input::placeholder, textarea::placeholder {
     color: gray;
-    padding-top: 10px;
   }
 
   .input-container, .textarea-container {
