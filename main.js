@@ -4,6 +4,7 @@ const $lastName = document.querySelector('#last-name');
 const $company = document.querySelector('#company');
 const $role = document.querySelector('#role');
 const $comments = document.querySelector('#comments');
+const $success = document.querySelector('#success');
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -16,6 +17,7 @@ function handleSubmit(event) {
   }
   console.log(formValue);
   $form.reset();
+  $success.className = 'text-align-center';
 }
 
 $form.addEventListener('submit', handleSubmit);

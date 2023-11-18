@@ -116,7 +116,7 @@ form {
 .form-container {
   flex-direction: column;
   align-items: center;
-  padding: 1em 0em 1em 0em;
+  padding: 1em 0em 3em 0em;
 }
 
 .form-row {
@@ -160,6 +160,15 @@ textarea {
 input::placeholder,
 textarea::placeholder {
   color: transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+#success {
+  color: green;
+  padding-top: .5em;
 }
 
 @media screen and (max-width: 800px) {
