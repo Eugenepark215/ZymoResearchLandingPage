@@ -56,7 +56,16 @@
   padding: .5em 1.5em .5em 1.5em;
   font-weight: 700;
   text-decoration: none;
-  transition-duration: 0.4s
+  transition-duration: 0.3s
+}
+
+.button-inquire:hover {
+  background-color: rgb(0, 180, 0)
+}
+
+.button-submit:hover {
+  background-color: rgb(0, 180, 0);
+  cursor: pointer;
 }
 
 .hero {
