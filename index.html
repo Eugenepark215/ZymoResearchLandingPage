@@ -71,30 +71,38 @@
     </p>
     </div>
   </section>
-  <section class="form-container">
-    <h1>Form</h1>
+  <section class="form-container display-flex">
+    <h1 class="header-form text-align-center">Form</h1>
     <form>
-      <div>
-        <label>First Name</label>
-        <input type="text"/>
+      <div class="form-row display-flex">
+        <div class="input-container display-flex">
+          <label>First Name</label>
+          <input type="text" id="first-name"/>
+        </div>
+        <div class="input-container display-flex">
+          <label>Last Name</label>
+          <input type="text" id="last-name"/>
+        </div>
       </div>
-      <div>
-        <label>Last Name</label>
-        <input type="text"/>
+      <div class="form-row display-flex">
+        <div class="input-container display-flex">
+          <label>Company</label>
+          <input type="text" id="company"/>
+        </div>
+        <div class="input-container display-flex">
+          <label>Role</label>
+          <input type="text" id="Role"/>
+        </div>
       </div>
-      <div>
-        <label>Company</label>
-        <input type="text"/>
+      <div class="form-row display-flex">
+        <div class="textarea-container display-flex">
+          <label>Additional Comments</label>
+          <textarea id="comments" rows="10"></textarea>
+        </div>
       </div>
-      <div>
-        <label>Role</label>
-        <input type="text"/>
+      <div class="text-align-center">
+        <button class="button-submit" type="submit">Submit</button>
       </div>
-      <div>
-        <label>Additional Comments</label>
-        <textarea></textarea>
-      </div>
-      <button type="submit">Submit</button>
     </form>
   </section>
 </body>

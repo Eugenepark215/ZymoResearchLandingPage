@@ -30,17 +30,23 @@
 
 .icon-container {
   padding: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .icon-image {
   width: 150px;
-  }
+}
+
 .icon-sub-text {
   padding-top: 1em;
   font-size: 2em;
   font-weight: 500;
 }
-.button-inquire {
+
+.button-inquire, .button-submit {
   background-color: green;
   color: white;
   border: none;
@@ -81,27 +87,58 @@ p {
   font-weight: 500;
   padding: 1em 0em 1em 0em;
 }
-@media screen and (max-width: 500px){
-  .header-hero {
-    font-size: 2em;
-  }
-  .sub-header-hero {
-    font-size: 1.5em;
-  }
-  .icon-image {
-    width: 100px
-  }
-  .icon-container {
-    padding: 1.5em 0em 2em 0em;
-  }
-    .icon-sub-text {
-      font-size: 1.5em;
-    }
-        .button-inquire {
-          font-size: 1.5em;
-          padding: .5em 1.5em .5em 1.5em;
-        }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
 }
+
+.header-form {
+  font-size: 3em;
+  font-weight: 500;
+  padding: 0em 0 1em 0;
+}
+
+.form-container {
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 0em 1em 0em;
+}
+
+.form-row {
+  justify-content: space-around;
+  padding: 0em 0em 2em 0em;
+}
+
+.input-container {
+  flex-direction: column;
+  width: 40%;
+}
+
+.textarea-container {
+  flex-direction: column;
+  width: 90%
+}
+
+label {
+  padding: 0em 0em 1em 0em;
+  font-weight: 500;
+}
+
+input {
+  height: 4em;
+  border-radius: 10px;
+  border-color: lightgray;
+  border-style: solid;
+}
+
+textarea {
+  border-radius: 10px;
+  border-color: lightgray;
+  border-style: solid;
+}
+
 
 @media screen and (max-width: 800px) {
   .hero {
@@ -122,9 +159,6 @@ p {
 
   .icon-container {
     padding: 2em 1.5em 3em 1.5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .icon-sub-text {
@@ -157,47 +191,59 @@ p {
 
   p {
     font-size: 1.25em;
-
     }
-
-
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
+
+  .header-hero {
+    font-size: 2em;
+  }
+
+  .sub-header-hero {
+    font-size: 1.5em;
+  }
+
   .hero {
     padding: 1.5em 0em 3em 0em;
   }
+
   .header-text {
     font-size: 2em;
   }
+
   .sub-header-text {
     font-size: 1.5em;
   }
+
   .icon-image {
     width: 100px
   }
+
   .icon-container {
     padding: 1.5em 0em 2em 0em;
   }
+
   .icon-sub-text {
-    padding-top: 1em;
     font-size: 1.5em;
+    padding-top: 1em;
   }
+
   .button-inquire {
-    background-color: green;
-    color: white;
-    border: none;
     font-size: 1.5em;
     padding: .5em 1.5em .5em 1.5em;
-    font-weight: 700;
   }
+
+
   .text-container {
     height: 15em;
     overflow-y: auto;
   }
+
   p {
     padding: 0;
   }
+
   .sub-header-text {
     padding: 0em 0em 1em 0em;
   }
