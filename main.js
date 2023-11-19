@@ -5,6 +5,7 @@ const $company = document.querySelector('#company');
 const $role = document.querySelector('#role');
 const $comments = document.querySelector('#comments');
 const $success = document.querySelector('#success');
+const $sub = document.querySelector('.sub');
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -18,6 +19,7 @@ function handleSubmit(event) {
   console.log(formValue);
   $form.reset();
 
+  $sub.className = 'sub hidden';
   $success.className = 'text-align-center';
 
   $success.style.opacity = 1;
