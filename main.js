@@ -18,6 +18,9 @@ function handleSubmit(event) {
   console.log(formValue);
   $form.reset();
   $success.className = 'text-align-center';
+  setTimeout(() => {
+    $success.className = 'text-align-center hidden';
+  }, 2000)
 }
 
 $form.addEventListener('submit', handleSubmit);
