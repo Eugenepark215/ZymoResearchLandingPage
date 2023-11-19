@@ -179,10 +179,12 @@ textarea::placeholder {
   background-color: green;
   color: white;
   padding: 2em 0em 2em 0em;
+  justify-content: center;
 }
 
 .footer-row {
   justify-content: space-around;
+  width: 80%;
 }
 
 .footer-container {
