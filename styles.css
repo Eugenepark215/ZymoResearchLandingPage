@@ -193,6 +193,11 @@ textarea::placeholder {
   justify-content: space-around;
 }
 
+.footer-container > a {
+  color: white;
+  text-decoration: none;
+}
+
 @media screen and (max-width:1500px){
 .icon-container {
   padding: 2em;
