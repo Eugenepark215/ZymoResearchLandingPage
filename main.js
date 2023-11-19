@@ -17,10 +17,19 @@ function handleSubmit(event) {
   }
   console.log(formValue);
   $form.reset();
+
   $success.className = 'text-align-center';
-  setTimeout(() => {
-    $success.className = 'text-align-center hidden';
-  }, 2000)
+
+  $success.style.opacity = 1;
+  let opacity = 1;
+  setInterval(() => {
+    setInterval(() => {
+      if (opacity > 0) {
+        opacity -= 0.05;
+        $success.style.opacity = opacity;
+      }
+    }, 200)
+  }, 1000)
 }
 
 $form.addEventListener('submit', handleSubmit);
