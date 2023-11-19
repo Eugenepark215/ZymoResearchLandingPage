@@ -1,3 +1,16 @@
 .display-flex {
   display: flex;
 }
+
+.text-align-center {
+  text-align: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+
+.hidden {
+  display: none;
+}
