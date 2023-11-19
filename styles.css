@@ -175,6 +175,24 @@ textarea::placeholder {
   padding-top: .5em;
 }
 
+.footer {
+  background-color: green;
+  color: white;
+}
+
+.footer-row {
+  justify-content: space-around;
+}
+
+.footer-container {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-icon-row {
+  justify-content: space-around;
+}
+
 @media screen and (max-width:1500px){
 .icon-container {
   padding: 2em;
