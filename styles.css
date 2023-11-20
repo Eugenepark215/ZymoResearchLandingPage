@@ -480,5 +480,17 @@ li:hover {
       padding: .5em 1.5em .5em 1.5em;
       font-weight: 700;
       width: 100%;
-    }
+  }
+
+  .button-shop {
+    font-size: 1em;
+  }
+
+  li {
+    padding: .5em;
+  }
+
+  .sub {
+    padding: 1em 0em 1em 0em;
+  }
 }
