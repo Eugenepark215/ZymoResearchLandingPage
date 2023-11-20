@@ -7,6 +7,7 @@ const $comments = document.querySelector('#comments');
 const $success = document.querySelector('#success');
 const $sub = document.querySelector('.sub');
 const $ul = document.querySelector('.ul');
+const $shopButton = document.querySelector('.button-shop');
 
 const data = [
   {
@@ -58,9 +59,12 @@ $form.addEventListener('submit', handleSubmit);
 function renderProductCard(entry) {
   const $li = document.createElement('li');
 
+  const $div = document.createElement('div');
+  $li.appendChild($div);
+
   const $productImgContainer = document.createElement('div');
   $productImgContainer.setAttribute('class', 'product-img-container');
-  $li.appendChild($productImgContainer);
+  $div.appendChild($productImgContainer);
 
   const $productAnchor = document.createElement('a');
   $productAnchor.setAttribute('class', 'product-anchor');
@@ -74,7 +78,7 @@ function renderProductCard(entry) {
 
   const $productTextContainer = document.createElement('div');
   $productTextContainer.setAttribute('class', 'product-text-container text-align-center');
-  $li.appendChild($productTextContainer);
+  $div.appendChild($productTextContainer);
 
   const $h1 = document.createElement('h1');
   $h1.setAttribute('class', 'product-header');
@@ -98,3 +102,7 @@ function renderProducts(event) {
 }
 
 document.addEventListener('DOMContentLoaded', renderProducts)
+
+$shopButton.addEventListener('click', function () {
+  location.href = 'https://www.lipsum.com/';
+})

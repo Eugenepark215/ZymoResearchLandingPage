@@ -76,6 +76,11 @@
   cursor: pointer;
 }
 
+.button-shop:hover {
+  background-color: rgb(0, 180, 0);
+  cursor: pointer;
+}
+
 .hero {
   padding: 2em 0em 4em 0em;
 }
