@@ -13,17 +13,20 @@ const data = [
   {
     img: './images/Product1.webp',
     name: 'Lorem Ipsum',
-    link: 'https://www.lipsum.com/'
+    link: 'https://www.lipsum.com/',
+    alt: 'Product1'
   },
   {
     img: './images/Product2.png',
     name: 'Lorem Ipsum',
-    link: 'https://www.lipsum.com/'
+    link: 'https://www.lipsum.com/',
+    alt: 'Product2'
   },
   {
     img: './images/Product3.jpg',
     name: 'Lorem Ipsum',
-    link: 'https://www.lipsum.com/'
+    link: 'https://www.lipsum.com/',
+    alt: 'Product2'
   },
 ]
 
@@ -74,6 +77,7 @@ function renderProductCard(entry) {
   const $img = document.createElement('img');
   $img.setAttribute('src', entry.img);
   $img.setAttribute('class', 'product-img');
+  $img.setAttribute('alt', entry.alt)
   $productAnchor.appendChild($img)
 
   const $productTextContainer = document.createElement('div');
