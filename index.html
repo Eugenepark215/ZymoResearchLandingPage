@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZymoLandingPage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+<link rel="stylesheet" href="/layout.css"/>
+<link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+  <div class="viewport">
+  <header class="banner">
+    <picture class="display-flex justify-content-center">
+      <source media="(min-width:1200px)" srcset="./images/banner-desktop.jpg"/>
+      <source media="(min-width:800px)" srcset="./images/banner-tablet.jpg"/>
+      <img class="banner-img" src="./images/banner-mobile.jpg"/>
+    </picture>
+  </header>
+  <main>
+  <section class="hero">
+    <h1 class="header-hero text-align-center">Header Text</h1>
+    <h5 class="sub-header-hero text-align-center">Lorem ipsum</h5>
+    <div class="display-flex icon-row">
+      <div class="icon-container">
+        <img class="icon-image" src="./icons/checkmark_icon.jpg"/>
+        <div class="icon-sub-text text-align-center">Lore ipsum</div>
+      </div>
+      <div class="icon-container">
+        <img class="icon-image" src="./icons/graphs_icon.jpg"/>
+        <div class="icon-sub-text text-align-center">Lore ipsum</div>
+      </div>
+      <div class="icon-container">
+        <img class="icon-image" src="./icons/bullseye_icon.jpg"/>
+        <div class="icon-sub-text text-align-center">Lore ipsum</div>
+      </div>
+    </div>
+    <div class="button-container text-align-center">
+        <a class="button-inquire" href="#form"/>Inquire Now</a>
+      </div>
+  </section>
+  </div>
+  <section class="text display-flex justify-content-center">
+    <h1 class="header-text text-align-center">Header Text</h1>
+    <h5 class="sub-header-text text-align-center">Lorem ipsum</h5>
+    <div class="text-container justify-content-center">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Et ultrices neque ornare aenean euismod elementum nisi.
+          Aliquet risus feugiat in ante metus dictum.
+          Vestibulum sed arcu non odio euismod. Ornare quam viverra orci sagittis eu.
+          Nisi vitae suscipit tellus mauris a diam maecenas sed enim.
+          Amet facilisis magna etiam tempor orci eu lobortis elementum nibh.
+          Amet luctus venenatis lectus magna fringilla urna porttitor.
+          Massa ultricies mi quis hendrerit.
+          Duis convallis convallis tellus id interdum.
+          Diam maecenas ultricies mi eget mauris pharetra et ultrices.
+    </p>
+    <br/>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Et ultrices neque ornare aenean euismod elementum nisi.
+          Aliquet risus feugiat in ante metus dictum.
+          Vestibulum sed arcu non odio euismod. Ornare quam viverra orci sagittis eu.
+          Nisi vitae suscipit tellus mauris a diam maecenas sed enim.
+          Amet facilisis magna etiam tempor orci eu lobortis elementum nibh.
+          Amet luctus venenatis lectus magna fringilla urna porttitor.
+          Massa ultricies mi quis hendrerit.
+          Duis convallis convallis tellus id interdum.
+          Diam maecenas ultricies mi eget mauris pharetra et ultrices.
+    </p>
+    </div>
+  </section>
+  <section class="products display-flex">
+    <div class="products-row">
+      <div class="products-column display-flex">
+        <div class="flex-row">
+          <h1 class="shop-header text-align-center">Lorem Impsum</h1>
+          <p class="text-align-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          </p>
+          <div class="text-align-center">
+            <button class="button-shop">Shop Now</button>
+          </div>
+        </div>
+      </div>
+        <ul class="ul"></ul>
+    </div>
+  </section>
+  <section class="form-container display-flex" id="form">
+    <h1 class="header-form text-align-center">Form</h1>
+    <form>
+      <div class="form-row display-flex">
+        <div class="input-container display-flex">
+          <label>First Name</label>
+          <input type="text" id="first-name" placeholder="First Name" required/>
+        </div>
+        <div class="input-container display-flex">
+          <label>Last Name</label>
+          <input type="text" id="last-name" placeholder="Last Name" required/>
+        </div>
+      </div>
+      <div class="form-row display-flex">
+        <div class="input-container display-flex">
+          <label>Company</label>
+          <input type="text" id="company" placeholder="Company"required/>
+        </div>
+        <div class="input-container display-flex">
+          <label>Role</label>
+          <input type="text" id="role" placeholder="Role"required/>
+        </div>
+      </div>
+      <div class="form-row display-flex">
+        <div class="textarea-container display-flex">
+          <label>Additional Comments</label>
+          <textarea id="comments" placeholder="Additional Comments"required></textarea>
+        </div>
+      </div>
+      <div class="form-row text-align-center">
+        <button class="button-submit" type="submit">Submit</button>
+        <div class="sub"></div>
+        <p class="text-align-center hidden" id="success">Successly Submitted</p>
+      </div>
+    </form>
+  </section>
+  </main>
+  <footer class="footer display-flex">
+    <div class="footer-row display-flex">
+      <div class="footer-container display-flex">
+        <h1 class="footer-header">Company</h1>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+      </div>
+      <div class="footer-container display-flex">
+        <h1 class="footer-header">Help</h1>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+      </div>
+      <div class="footer-container display-flex">
+        <h1 class="footer-header">Resources</h1>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+        <a href="https://www.lipsum.com/">Lorem ipsum</a>
+      </div>
+      <div class="footer-icon-container">
+        <h1 class="footer-header">Socialize</h1>
+        <div class="footer-icon-row display-flex">
+          <a href="https://www.facebook.com/zymoresearch/">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/zymoresearch?lang=en">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/zymo-research-corp/">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com/zymoresearch/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/user/ZymoResearchCorp">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
